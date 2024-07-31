@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Handlee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>h1{
+    font-size: 30px;
+    font-weight: 100;
+}
+#part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+
+#nav #part2 a:nth-last-child(1){
+    padding: 7px 16px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: springgreen;
+    height: 100%;
+    transition: left 0.4s ease;
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+#main>h1{
+    font-size: 6vw;
+    font-weight: 100;
+    width: 60%;
+    z-index: 99;
+    text-align: center;
+    text-transform: capitalize;
+}
+#main>h1::after{
+    content: "";
+    position: absolute;
+    width: 32%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#main #img1{
+    height: 440px;
+    width: 280px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    object-fit: cover;
+}
+#main #img2{
+    height: 290px;
+    width: 280px;
+    position: absolute;
+    right: 25%;
+    top: 18%;
+    object-fit: cover;
+}
+#main #img3{
+    height: 250px;
+    width: 230px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    object-fit: cover;
+}
+#mid-text{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 70%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+    gap: 20px;
+}
+#mid-text h3{
+    font-size: 30px;
+    color: #000000c9;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+}
+
+#mid-text i{
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+
+

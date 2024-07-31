@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100%;
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(/images/house.jpeg);
+    background-size: cover;
+    background-position: bottom;
+}
+#overlay{
+    position: relative;
+    min-height: inherit;
+    width: 100%;
+    background-color: #3c3b3b80;
+}
+#text{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 30%;
+    width: 100%;
+    padding: 0 10vw;
+    color: #fff;
+}
+#text h1{
+    font-size: 4vw;
+}
+#text-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 9vw;
+}
+#text-right p{
+    font-size: 12px;
+    font-weight: 40%;
+}
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: #fff;
+}
+#bone{
+    padding: 2vw;
+    min-height: 20vh;
+    width: 25%;
+    background-color: #fff;
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 10%;
+}
+#btwo{
+    min-height: inherit;
+    width: 25%;
+    background-image: url(/images/flower.avif);
+    background-size: cover;
+    background-position: center;
+}
+#bthree{
+    min-height: inherit;
+    width: 20%;
+    background-color: rgb(75, 27, 75);
+}
+#bthreetop{
+    min-height: 20vh;
+    width: 100%;
+    padding: 20px;
+    background-color: orangered;
+    color: #fff;
+}
+#bthreetop p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+#bthreebottom{
+    min-height: 20vh;
+    width: 100%;
+    background-image: url(/images/plan.jpg);
+    background-size: cover;
+}
+#bfour{
+    min-height: inherit;
+    width: 30%;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf .photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(32, 30, 30);
+}
+.notf p{
+    width: 90%;
+}
+@media (max-width: 500px) {
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        min-height: 20vh;
+    }
+    #overlay #text #text-right{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #text-right p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #text-right #icons{
+        margin-top: 30px;
+    }
+    #bottom{
+        flex-direction: column;
+    }
+    #bone{
+        width: 100%;
+    }
+    #btwo{
+        width: 100%;
+        min-height: 40vh;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+    }  
+    #bthreebottom{
+        min-height: 40vh;
+    }
+    #bfour{
+        width: 100%;
+    }
+}

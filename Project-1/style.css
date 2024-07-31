@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 15%, 20%);
+    display: flex;
+}
+#nav{
+    font-size: 8px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 20%;
+    top: 12%;
+    width: 200px;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+}
+#part2{
+    height: 100%;
+    width: 68%;
+    background-image: url(https://images.unsplash.com/photo-1579493934830-eab45746b51b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 22%;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 3%, 12%, 0.523);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+}
+#text-div{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#text-div>h1{
+    font-size: 100px;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+#small-img{
+    height: 400px;
+    width: 300px;
+    background-image: url(https://images.unsplash.com/photo-1525279844598-52fd0d3fecc2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+.vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -50%;
+    transform-origin: 0% 0%;
+    top: -5%;   
+}
+.vertical-text h1{
+    font-size: 70px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 9px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+}
