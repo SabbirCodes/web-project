@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Handlee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/format:webp/0*n7q4y3QFdmN4ONPL);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.navbar h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.links a{
+    text-decoration: none;
+    font-weight: 400;
+}
+.links i{
+    font-weight: 800;
+    cursor: pointer;
+}
+.content{
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    margin: 10%;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.play{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    gap: 10%;
+}
+.play i{
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 35px 35px;
+    cursor: pointer;
+}
+.content h2{
+    height: 50px;
+    width: 40%;
+    font-weight: 500;
+    background-color: rgb(55, 61, 65);
+    border-radius: 5px;
+    padding: 10px 18px;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+}
+.info{
+    height: 30%;
+    width: 26%;
+    position: absolute;
+    background-color: #f7d9d933;
+    bottom: 30%;
+    right: 10%;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+}
+.info h2{
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: 25%;
+}
+.info p{
+    font-size: 13px;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 20%;
+}
+.bottom{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 5%;
+}
+.left h4{
+    font-weight: 400;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 70%;
+    margin-right: 35%;
+}
+.right h1{
+    font-size: 35px;
+}
+.right h4{
+    font-weight: 300;
+}
