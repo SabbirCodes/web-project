@@ -66,6 +66,10 @@ html, body{
 #nav #part2 a:nth-last-child(1):hover #green{
     left: 0;
 }
+
+#mid-text>h4{
+    cursor: pointer;
+}
 #main>h1{
     font-size: 6vw;
     font-weight: 100;
@@ -133,6 +137,26 @@ html, body{
     position: relative;
     overflow: hidden;
     border: 1px solid #000;
+}
+
+.move-img{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    transition: 0.4s ease-in-out all;
+    
+
+}
+
+@keyframes move{
+    from {
+        margin-top: 20px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 
