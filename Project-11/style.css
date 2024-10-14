@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.links #box{
+    border: 3px solid #535451;
+    padding: 10px;
+}
+.links a{
+    text-decoration: none;
+    color: #5a5b56;
+    font-weight: 600;
+    gap: 40px;
+}
+.logo{
+    font-size: 40px;
+    color: #5a5b56;
+}
+
+.page1{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/plan.jpg);
+    background-size: calc(99%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mid-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.mid-content h1{
+    font-size: 150px;
+    color: #3e423d;
+    font-weight: 300;
+}
+.mid-content h3{
+    font-size: 20px;
+    color: #6d6e6d;
+}
+.line{
+    height: 4px;
+    width: 60px;
+    background-color: #7d8a81;
+    margin-left: 45%;
+    margin-top: 1%;
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.li{
+    margin-left: 33%;
+}
+.boxs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-box{
+    height: 400px;
+    width: 300px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+}
